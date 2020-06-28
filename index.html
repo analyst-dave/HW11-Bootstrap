@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HW11-Bootstrap</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body class="bg-secondary">
+  
+  <nav class="navbar navbar-expand-md bg-white navbar-light ml-auto mb-4">
+      <!-- Brand -->
+      <a class="navbar-brand bg-info navbar text-white" href="index.html">Lattitude</a>
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse ml-auto" id="myNavbar">
+        <ul class="navbar-nav ml-auto">
+          <!-- Dropdown -->
+          <li class="nav-item dropdown ml-auto">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Plots</a>
+            <ul class="dropdown-menu ml-auto">
+              <li><a class="nav-link" href="visual1.html">Max Temp</a></li>
+              <li><a class="nav-link" href="visual2.html">Humidity</a></li>
+              <li><a class="nav-link" href="visual3.html">Cloudiness</a></li>
+              <li><a class="nav-link" href="visual4.html">Wind Speed</a></li>
+            </ul>
+          </li>
+          <li class="nav-item ml-auto">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item ml-auto">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Navbar links ends -->
+  </nav>
+
+  <main class="container-fluid">
+    <!--Normally these medium columns go full wide on small screen sizes-->
+    <div class="row">
+
+      <div class="col-md-7 bg-white border m-2 p-4">
+        <h3 class="feature-title text-info border-bottom">Summary:</h3>
+          <img src='Lat-vs-Temp.png' class="img-responsive float-left mr-2"/>
+          <p>Exercitation ex nisi qui ut eu quis voluptate. Pariatur irure aliquip proident occaecat commodo mollit cillum eu nostrud quis cillum. Veniam ex do enim incididunt ex. Anim ullamco dolor officia laboris consequat reprehenderit duis quis. Eiusmod eiusmod veniam deserunt occaecat est ullamco et exercitation nisi aute occaecat sint. Mollit labore quis sunt consequat sit et non eiusmod eiusmod qui nisi adipisicing. Consequat amet Lorem reprehenderit nulla quis aliqua qui pariatur ea magna.</p>
+          <p>Aute minim aliqua culpa officia. Qui enim nostrud officia ipsum aute. Elit ex minim commodo dolor laboris.</p>
+          <p>Adipisicing Lorem fugiat fugiat ullamco ipsum magna. Duis tempor id est dolor velit duis sunt nostrud Lorem. Elit qui occaecat veniam dolor sit sit consequat ut in adipisicing ut esse consectetur. Eu ex est esse commodo dolor elit commodo veniam cillum tempor. Duis duis magna irure est aliqua sunt ut tempor ipsum irure do.</p>
+      </div>
+
+      <div class="col-md bg-white border m-2 p-4">
+        <h3 class="feature-title text-info border-bottom">Visualizations:</h3>
+        <div class="row">
+          <div class="col-md-6 col-2 p-4">
+            <a href="visual1.html">
+            <img class="img-thumbnail img-fluid" src="Lat-vs-Max Temp-regress-North.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-6 col-2 p-4">
+            <a href="visual2.html">
+            <img class="img-thumbnail img-fluid" src="Lat-vs-Humidity-regress-North.png" alt="">
+            </a>
+          </div>
+
+          <div class="col-md-6 col-2 p-4">
+            <a href="visual3.html">
+            <img class="img-thumbnail img-fluid" src="Lat-vs-Cloudiness-regress-North.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-6 col-2 p-4">
+            <a href="visual4.html">
+            <img class="img-thumbnail img-fluid" src="Lat-vs-Wind Speed-regress-North.png" alt="">
+            </a>
+          </div>
+        </div>
+        <p class="bg-warning">Click on the above thumbnails to see the detail of the plots</p>
+        <p>Ea tempor ut dolor aliqua tempor laboris. Fugiat cupidatat occaecat magna commodo cupidatat. Reprehenderit et occaecat irure amet enim anim laboris.</p>
+      </div>
+
+
+    </div>
+
+  </main>
+  
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HW11-Bootstrap</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body class="bg-secondary">
+  
+  <nav class="navbar navbar-expand-md bg-white navbar-light ml-auto mb-4">
+      <!-- Brand -->
+      <a class="navbar-brand bg-info navbar text-white" href="index.html">Lattitude</a>
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse ml-auto" id="myNavbar">
+        <ul class="navbar-nav ml-auto">
+          <!-- Dropdown -->
+          <li class="nav-item dropdown ml-auto">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Plots</a>
+            <ul class="dropdown-menu ml-auto">
+              <li><a class="nav-link" href="visual1.html">Max Temp</a></li>
+              <li><a class="nav-link" href="visual2.html">Humidity</a></li>
+              <li><a class="nav-link" href="visual3.html">Cloudiness</a></li>
+              <li><a class="nav-link" href="visual4.html">Wind Speed</a></li>
+            </ul>
+          </li>
+          <li class="nav-item ml-auto">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item ml-auto">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Navbar links ends -->
+  </nav>
+
+  <main class="container-fluid">
+    
+    <div class="row">
+
+      <div class="col-md-7 bg-white border m-2 p-4">
+        <h3 class="feature-title text-info border-bottom">Cloudiness:</h3>
+          <img src='Lat-vs-Cloudiness-regress-North.png' class="img-responsive float-left mr-2"/>
+          <p>Cillum velit nostrud minim irure nulla laborum duis ipsum nostrud qui labore officia ad. Qui officia deserunt labore nostrud. Dolore et Lorem anim reprehenderit minim duis cillum irure nostrud id nulla reprehenderit. Labore nulla consequat irure sunt.</p>
+          <p>Elit in exercitation pariatur proident non commodo est id dolor et. Consectetur occaecat consectetur id in nisi. Duis ad incididunt id dolore tempor mollit eu magna. Id sint esse ut labore cillum non proident magna ad dolor irure minim commodo.</p>
+      </div>
+
+      <div class="col-md bg-white border m-2 p-4">
+        <h3 class="feature-title text-info border-bottom">Visualizations:</h3>
+        <div class="row">
+          <div class="col-md-6 col-2 p-4">
+            <a href="visual1.html">
+            <img class="img-thumbnail img-fluid" src="Lat-vs-Max Temp-regress-North.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-6 col-2 p-4">
+            <a href="visual2.html">
+            <img class="img-thumbnail img-fluid" src="Lat-vs-Humidity-regress-North.png" alt="">
+            </a>
+          </div>
+
+          <div class="col-md-6 col-2 p-4">
+            <a href="visual3.html">
+            <img class="img-thumbnail img-fluid" src="Lat-vs-Cloudiness-regress-North.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-6 col-2 p-4">
+            <a href="visual4.html">
+            <img class="img-thumbnail img-fluid" src="Lat-vs-Wind Speed-regress-North.png" alt="">
+            </a>
+          </div>
+        </div>
+        <p class="bg-warning">Click on the above thumbnails to see the detail of the plots</p>
+        <p>Ea tempor ut dolor aliqua tempor laboris. Fugiat cupidatat occaecat magna commodo cupidatat. Reprehenderit et occaecat irure amet enim anim laboris.</p>
+      </div>
+
+    </div>
+
+  </main>
+  
+</body>
+
+</html>
